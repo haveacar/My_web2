@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <title>Daniel Govnir Blog</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico"/>
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <!-- Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css"/>
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"/>
+</head>
+<body id="page-top">
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand" href="#page-top"><img src="{{ url_for('static', filename='img/navbar-logo.svg') }}"
+                                                      alt="..."/></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
+                aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            Menu
+            <i class="fas fa-bars ms-1"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
+                <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
+                <li class="nav-item"><a class="nav-link" href="#about">Experience</a></li>
+                <li class="nav-item"><a class="nav-link" href="#team">About Me</a></li>
+                <li class="nav-item"><a class="nav-link" href="https://danielgovnir.blogspot.com/">Blog</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Masthead-->
+<header class="masthead">
+    <div class="container">
+        <div class="masthead-subheading">Welcome To MY Page!</div>
+        <div class="masthead-heading text-uppercase">IT's Nice To Meet You</div>
+        <a class="btn btn-primary btn-xl text-uppercase" href="#portfolio"> More</a>
+    </div>
+</header>
+
+<!-- Portfolio Grid-->
+<section class="page-section bg-light" id="portfolio">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Motivated and certified Python developer</h3>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 1-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/1p.png') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">CryptoPopClub</div>
+                        <div class="portfolio-caption-subheading text-muted">NFT</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 2-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/2p.png') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Aliens Guns</div>
+                        <div class="portfolio-caption-subheading text-muted">Games</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4">
+                <!-- Portfolio item 3-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/3p.png') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">Tic Tac Toe</div>
+                        <div class="portfolio-caption-subheading text-muted">Games.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
+                <!-- Portfolio item 4-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">In work</div>
+                        <div class="portfolio-caption-subheading text-muted">In work</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
+                <!-- Portfolio item 5-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">In work</div>
+                        <div class="portfolio-caption-subheading text-muted">Website Design</div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-6">
+                <!-- Portfolio item 6-->
+                <div class="portfolio-item">
+                    <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
+                        <div class="portfolio-hover">
+                            <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                        </div>
+                        <img class="img-fluid" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                    </a>
+                    <div class="portfolio-caption">
+                        <div class="portfolio-caption-heading">In work</div>
+                        <div class="portfolio-caption-subheading text-muted">Photography</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- About-->
+<section class="page-section" id="about">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Experience/Education</h2>
+            <h3 class="section-subheading text-muted">Certificated Python developer.</h3>
+        </div>
+        <ul class="timeline">
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image">
+                    <h4>
+                        Just
+                        <br/>
+                        Do
+                        <br/>
+                        It!
+                    </h4>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='img/1.jpeg') }}"
+                                                 alt="..."/></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>February 2023</h4>
+                        <h4 class="subheading">Outsourcing projects</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Developed for NFT, for collecting data by Python and SQL.
+                    Developed shell scripting and Python programs to automate the data flow on day-to-day tasks.
+                    Development Git, Pycharm. Knowledgeable in Python frameworks.</p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='img/2.jpeg') }}"
+                                                 alt="..."/></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>Januar 2022</h4>
+                        <h4 class="subheading">Certificated Python Developer</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Successfully completed certification.
+                    Participated in more than 2 projects from initial research and conceptual design through testing and implementation phases</p></div>
+                </div>
+            </li>
+            <li>
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='img/3.jpeg') }}"
+                                                 alt="..."/></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2011-2017</h4>
+                        <h4 class="subheading">WordPress developer</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">WordPress developer. Successfully reassessed and optimized Google AdWords campaigns for a 35% boost in ad network revenue across 10+ websites.
+
+ </p></div>
+                </div>
+            </li>
+            <li class="timeline-inverted">
+                <div class="timeline-image"><img class="rounded-circle img-fluid" src="{{ url_for('static', filename='img/4.jpeg') }}"
+                                                 alt="..."/></div>
+                <div class="timeline-panel">
+                    <div class="timeline-heading">
+                        <h4>2003-2009</h4>
+                        <h4 class="subheading">Bukovinian University</h4>
+                    </div>
+                    <div class="timeline-body"><p class="text-muted">Bachelor of computer scienceand and Bachelor of Law.</p></div>
+                </div>
+
+        </ul>
+    </div>
+</section>
+<!-- Team-->
+<section class="page-section bg-light" id="team">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">About me</h2>
+            <h3 class="section-subheading text-muted">“Life is amazing. Life is messy. Life is what you make of it.”
+                Dwayne Johnson</h3>
+        </div>
+        <div class="row">
+
+            <div class="col-lg-4">
+                <div class="team-member">
+                    <img class="mx-auto rounded-circle" src="{{ url_for('static', filename='img/2.jpg') }}" alt="..."/>
+                    <h4>Daniel Govnir</h4>
+                    <p class="text-muted">Python developer</p>
+                    <a class="btn btn-dark btn-social mx-2" href="https://github.com/haveacar"
+                       aria-label="Daniel Govnir Github"><i
+                            class="fab fa-github"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/daniel.zh770"
+                       aria-label="Daniel Govnir Facebook Profile"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/daniel-govnir-2bb234214/"
+                       aria-label="Daniel Govnir LinkedIn Profile"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
+                <h1><b>Short Biography</b></h1>
+                I am from Ukraine, Chernovtsy. A very pretty town with amazing story and a mountain perfect for skiing
+                in the winter. I speak 4 languages.
+                My first language is <b>Ukrainian</b>, and <b>Russian language</b>. Learned <b>English</b> and
+                <b>Hebrew</b> throughout the years at
+                school and by courses.
+                I also have a college Law degree and I'm student in Computer Science.
+                I moved 3 years ago To Tel Aviv, Israel. I am married and I have a child.
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">
+                <h1><b>AWARDS & CERTIFICATIONS</b></h1>
+                <div>
+                    <div data-iframe-width="150" data-iframe-height="270"
+                         data-share-badge-id="05fcac9e-4509-4506-a780-c4281036a81d"
+                         data-share-badge-host="https://www.credly.com"></div>
+                    <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Contact-->
+<section class="page-section" id="contact">
+    <div class="container">
+        <div class="text-center">
+            <h2 class="section-heading text-uppercase">Contact Me</h2>
+            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+
+        </div>
+        <div>
+            <div class="resume-section-content">
+                <h1 class="mb-0">
+                    <span class="text-primary">Daniel Govnir</span>
+                </h1>
+                <div class="subheading mb-5">
+                    Ahad Am 33 Street · Azor, Tel Aviv · +972 (0) 533888242 ·
+                    <a href="mailto:daniel.zhovnir@gmail.com">daniel.zhovnir@gmail.com</a>
+                </div>
+                <p class="lead mb-5">Motivated certified Python developer and professional with 1+ years of experience.
+                    Inclined front-end development. Highly skilled in Python coding and scripting, Flask framework, and
+                    communication.
+
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+<!-- Footer-->
+<footer class="footer py-4">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-4 text-lg-start">Copyright &copy; Daniel Govnir 2023</div>
+            <div class="col-lg-4 my-3 my-lg-0">
+                <a class="btn btn-dark btn-social mx-2" href="https://github.com/haveacar" aria-label="Github"><i
+                        class="fab fa-github"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.facebook.com/daniel.zh770"
+                   aria-label="Facebook"><i
+                        class="fab fa-facebook-f"></i></a>
+                <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/daniel-govnir-2bb234214/"
+                   aria-label="LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a class="link-dark text-decoration-none me-3" href="#!">Privacy Policy</a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- Portfolio Modals-->
+<!-- Portfolio item 1 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">Crypto Pop Club</h2>
+                            <p class="item-intro text-muted">CryptoPopClub is the perfect mix of 🐵 & Pop dolls </p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/1p.png') }}" alt="..."/>
+                            <p>The finest 3D art you’ve seen in your life - CryptoPopClub is the perfect mix of 🐵 & Pop dolls molded into 1 impressive creation of 7777 NFTs that you wouldn’t wanna miss!</p>
+                            <p>I fixed a lot of mistakes in Jsons made by the previous developer.</p>
+                            <p>Each Jason file has unique attributes You can buy CryptoPopClub NFT:</p>
+                            <p>You can buy CryptoPopClub NFT:</p>
+                            <li><a href="https://opensea.io/collection/cryptopopclub">Link</a></li>
+                            <div class="p-4">
+                            <h4 class="fst-italic">This project on GitHub</h4>
+                            <li><a href="https://github.com/haveacar/NFT_Jason">GitHub</a></li>
+
+                    </ol>
+                </div>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    CryptoPopClub
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    NFT
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 2 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">Python framework Pygame</h2>
+                            <p class="item-intro text-muted">This is a classic simple Shooter game from 80s. Made by Me on Python with Pygame..</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/2p.png') }}" alt="..."/>
+                            <p>Controls: <p>Move your spaceship by pressing <b>LEFT or RIGHT</b> key</p>
+                            <p>To Fire using <b>SPACE</b> key</p>
+                            <p>Destroy all enemies to win the game</p>
+                            <h4 class="fst-italic">This project on GitHub</h4>
+                            <li><a href="https://github.com/haveacar/alians_guns">GitHub</a></li>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Stydy project
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Games framework Pygame
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 3 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">Tic Tac Toe</h2>
+                            <p class="item-intro text-muted">Python classic console game.</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/3p.png') }}" alt="..."/>
+                            <p>With beautiful color output in print</p>
+                            <p>Full correct input check.</p>
+                            <p><b>How to play?:</b></p>
+                            <p>Game for two players who take turns marking the spaces in a three-by-three grid with X or O.</p>
+                            <p>The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row is the winner.</p>
+                            <p>Keyboard input</p>
+                            <h4 class="fst-italic">This project on GitHub</h4>
+                            <li><a href="https://github.com/haveacar/Tic_Tac_Toe">GitHub:</a></li>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Stydy project
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Games
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 4 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">In work</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Lines
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Branding
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 5 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">In work</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Southwest
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Website Design
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Portfolio item 6 modal popup-->
+<div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="close-modal" data-bs-dismiss="modal"><img
+                    src="{{ url_for('static', filename='img/close-icon.svg') }}" alt="Close modal"/>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="modal-body">
+                            <!-- Project details-->
+                            <h2 class="text-uppercase">In work</h2>
+                            <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
+                            <img class="img-fluid d-block mx-auto" src="{{ url_for('static', filename='img/4p.jpg') }}" alt="..."/>
+                            <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt
+                                repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae,
+                                nostrum, reiciendis facere nemo!</p>
+                            <ul class="list-inline">
+                                <li>
+                                    <strong>Client:</strong>
+                                    Window
+                                </li>
+                                <li>
+                                    <strong>Category:</strong>
+                                    Photography
+                                </li>
+                            </ul>
+                            <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                <i class="fas fa-xmark me-1"></i>
+                                Close Project
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Bootstrap core JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+<script src="{{ url_for('static', filename='js/scripts.js') }}"></script>
+<
+<script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+</body>
+</html>

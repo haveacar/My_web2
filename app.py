@@ -1,5 +1,4 @@
-from flask import Flask, render_template,url_for
-
+from flask import Flask, render_template, url_for
 
 # config flask
 app = Flask(__name__)
@@ -14,4 +13,3 @@ def hello_world():
 
 if __name__ == '__main__':
     app.run()
-

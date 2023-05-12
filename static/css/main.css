@@ -11767,3 +11767,12 @@ section#contact form#contactForm :-ms-input-placeholder {
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
+.div-with-padding {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.img-with-fixed-size {
+  width: 900px;
+  height: 700px;
+  object-fit: cover; /* Optional. This ensures that the entire image is displayed within the fixed size, without stretching or distorting it. */
+}

@@ -3,11 +3,10 @@ from flask import Flask, render_template, url_for
 # config flask
 app = Flask(__name__)
 
-
 # home page
 @app.route('/')
 @app.route('/home')
-def hello_world():
+def main_page():
     return render_template('index.html')
 
 

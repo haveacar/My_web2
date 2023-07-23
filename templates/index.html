@@ -140,6 +140,9 @@
                              data-share-badge-id="3e4bee61-5bb9-4459-b44a-56811038b51f"
                              data-share-badge-host="https://www.credly.com"></div>
                         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+                        <br><a href="https://github.com/haveacar">
+                            <img src="{{ url_for('static', filename='img/git_bedges.png') }}" alt="Description of the image" style="width: 40%;">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -148,42 +151,30 @@
     <!--space for image slider-->
 </section>
 <!-- Image Slider -->
-<section class="page-section" id="slider">
-    <div class="container">
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"data-interval="3000">
-            <ol class="carousel-indicators">
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"></li>
-                <li data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"></li>
-            </ol>
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='img/certificate_python_institute.png') }}" alt="First slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='img/docker.jpeg') }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='img/spectr.jpg') }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='img/cer1.jpg') }}" alt="Second slide">
-                </div>
-                <div class="carousel-item">
-                    <img class="d-block w-100" src="{{ url_for('static', filename='img/cer2.jpg') }}" alt="Third slide">
-                </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </a>
-        </div>
+<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{{ url_for('static', filename='img/certificate_python_institute.png') }}" class="d-block w-100" alt="...">
     </div>
-</section>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/cer1.jpg') }}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/cer2.jpg') }}" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="{{ url_for('static', filename='img/spectr.jpg') }}" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">

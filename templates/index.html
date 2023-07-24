@@ -55,9 +55,9 @@
         </div>
         <!-- Image Slider -->
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <img src="{{ url_for('static', filename='img/aws.jpg') }}" class="d-block w-100" alt="...">
+                    <img src="{{ url_for('static', filename='img/aws.jpg') }}" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
                     <a href="https://easytravelsmart.com/">
@@ -75,17 +75,19 @@
                     </a>
                 </div>
 
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                    data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            </div>
+            </button>
+        </div>
+    </div>
 </section>
 <!-- About-->
 <section class="page-section" id="about">
@@ -150,7 +152,8 @@
                         others</b>
                     <b class="text-sm-center"> Experienced and knowledgeable in Python, SQL, PostgreSQL, Object-Oriented
                         Programming(OOP), AWS, Linux, WEB3, REST API, Flask, Django</b>
-                </div><br>
+                </div>
+                <br>
             </div>
             <hr>
             <div class="row">
@@ -169,50 +172,24 @@
                              data-share-badge-host="https://www.credly.com"></div>
                         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
                         <br><a href="https://github.com/haveacar">
-                            <img src="{{ url_for('static', filename='img/git_bedges.png') }}" alt="Description of the image" style="width: 40%;">
-                        </a>
+                        <img src="{{ url_for('static', filename='img/git_bedges.png') }}" alt="Description of the image"
+                             style="width: 40%;">
+                    </a><br>
+                        <div>
+                            {% for image in images %}
+                                <img src="{{ url_for('static', filename=image) }}" class="img-fluid" alt="...">
+                            {% endfor %}
+                        </div>
                     </div>
+
                 </div>
             </div>
         </div>
-    </div>
-    <!--space for image slider-->
-</section>
-<section>
-    <!-- Image Slider -->
-    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="{{ url_for('static', filename='img/aws.jpg') }}" class="d-block w-100" alt="...">
-                </div>
-                <div class="carousel-item">
-                    <a href="https://easytravelsmart.com/">
-                        <img src="{{ url_for('static', filename='img/travel.png') }}" class="d-block w-100" alt="...">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://www.coart.space">
-                        <img src="{{ url_for('static', filename='img/coart.png') }}" class="d-block w-100" alt="...">
-                    </a>
-                </div>
-                <div class="carousel-item">
-                    <a href="https://github.com/haveacar/alians_guns">
-                        <img src="{{ url_for('static', filename='img/alians.jpeg') }}" class="d-block w-100" alt="...">
-                    </a>
-                </div>
 
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-            </div>
-            </div>
-</section>>
+    </div>
+
+</section>
+
 <!-- Contact-->
 <section class="page-section" id="contact">
     <div class="container">
@@ -235,7 +212,6 @@
                     others.Experienced and knowledgeable in Python, SQL, PostgreSQL, Git, Object-Oriented Programming
                     (OOP), AWS.
                 </p>
-
             </div>
         </div>
     </div>

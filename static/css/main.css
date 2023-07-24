@@ -590,7 +590,7 @@ progress {
 }
 
 .img-fluid {
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
 }
 
@@ -5964,6 +5964,8 @@ dcrumb-item.active {
 .carousel.pointer-event {
   touch-action: pan-y;
 }
+
+
 
 .carousel-inner {
   position: relative;
